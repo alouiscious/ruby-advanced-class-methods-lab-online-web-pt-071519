@@ -64,7 +64,7 @@ class Song
 binding.pry    
     song = self.new
     # @file.name = (name.split(" - ")[1])
-    song = (name.split(" - ")[0])(name.split(" - ")[1].chomp(".mp3"))
+    song = (name.split(" - ")[0] + name.split(" - ")[1].chomp(".mp3"))
     @song.save
     
   end
