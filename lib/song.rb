@@ -55,14 +55,7 @@ class Song
   end
   
   def self.new_from_filename(name)
-    @name = self.new_by_name(name)
-    @name = @name.name.split(" - ")
-    
-    @name.each do |artist, filename| 
-    binding.pry
-      @artist_name << artist
-      @name << filename.split(".mp3")
-    end
+    @name
   end
   
   def self.create_from_filename(name, artist_name)
