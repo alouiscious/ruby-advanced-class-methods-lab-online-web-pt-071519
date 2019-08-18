@@ -63,7 +63,7 @@ class Song
   def self.create_from_filename(name)
     @song = self.create_by_name(name)
     
-    @song.filename = (name.split("" - )[1])
+    @song.filename = (name.split(" - ")[1])
     @song
     
   end
