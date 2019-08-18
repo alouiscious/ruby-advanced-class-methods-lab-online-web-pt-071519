@@ -63,9 +63,10 @@ class Song
   def self.create_from_filename(name)
 binding.pry    
     song = self.new
-    # @file.name = (name.split(" - ")[1])
-    song = (name.split("-")[0] + name.split(" - ")[1])
-    @song.save
+    song.artist_name = (name.split(" - ")[0])
+    song.name = (name.split(" - ")[1].chomp(".mp3"))
+    song
+    song.save
     
   end
   
