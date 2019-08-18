@@ -64,7 +64,7 @@ class Song
 binding.pry    
     song = self.new
     @song.name = (name.split(" - ")[1])
-    @song
+    @song.save
     
   end
   
