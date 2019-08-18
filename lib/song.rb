@@ -64,7 +64,7 @@ class Song
 # binding.pry    
     song = self.new
     @song.name = (name.split(" - ")[1])
-    @song.save
+    @song.save = (name.split(" - ")[1].chomp(".mp3"))
     
   end
   
