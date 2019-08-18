@@ -55,7 +55,7 @@ class Song
   end
   
   def self.new_from_filename(name)
-    song.name = (name.split (" - ") )
+    song.name = (name.split (" - ")[1] )
   end
   
   def self.create_from_filename(name, artist_name)
