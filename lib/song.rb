@@ -65,7 +65,7 @@ binding.pry
     song = self.new
     song.artist_name = (name.split(" - ")[0])
     song.name = (name.split(" - ")[1].chomp(".mp3"))
-    song
+    @@all << song
     song.save
     
   end
