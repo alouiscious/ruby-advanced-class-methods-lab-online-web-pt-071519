@@ -61,7 +61,9 @@ class Song
   end
   
   def self.create_from_filename(name)
-    @song.art
+    song = self.create_by_name(name)
+    
+    @song.artist_name = 
     
   end
   
