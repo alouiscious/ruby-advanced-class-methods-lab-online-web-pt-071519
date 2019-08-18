@@ -57,12 +57,12 @@ class Song
   def self.new_from_filename(name)
     @name = self.new_by_name(name)
     @name = @name.name.split(" - ")
+    binding.pry
     
     @name.each do |artist, filename| 
       @artist_name << artist
       @name << filename.split(".mp3")
     end
-    binding.pry
   end
   
   def self.create_from_filename(name, artist_name)
