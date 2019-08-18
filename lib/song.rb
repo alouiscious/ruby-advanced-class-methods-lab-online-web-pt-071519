@@ -60,7 +60,8 @@ class Song
     @song
   end
   
-  def self.create_from_filename(name, artist_name)
+  def self.create_from_filename(name)
+    @song.art
     
   end
   
