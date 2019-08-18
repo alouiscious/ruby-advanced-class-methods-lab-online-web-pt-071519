@@ -66,7 +66,7 @@ binding.pry
     song.artist_name = (name.split(" - ")[0])
     song.name = (name.split(" - ")[1].chomp(".mp3"))
     @@all << song
-    song.save
+    song
     
   end
   
